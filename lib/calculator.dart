@@ -28,6 +28,7 @@ class Calculator{
       "shout out to me",
       "dark theme only",
       "searching for solution",
+      "now with keyboard input",
       "hacking your pc...",
       "shiting down..." // TODO shit down pc if not closed in 3 seconds
     ];
@@ -40,7 +41,7 @@ class Calculator{
     _ruleTheJoke();
   }
 
-  final Map<CalculatorOperation, String> signs = {
+  static final Map<CalculatorOperation, String> signs = {
     CalculatorOperation.plus: "+",
     CalculatorOperation.minus: "-",
     CalculatorOperation.divide: "/",
