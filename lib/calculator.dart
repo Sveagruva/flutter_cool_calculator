@@ -82,12 +82,9 @@ class Calculator{
     if(_firstNumber.endsWith("."))
       return;
 
-    if(_firstNumber.indexOf(".") == -1)
+    if(_firstNumber.indexOf(".") == -1 && _operation == null)
       return _SetFirstNumber(_firstNumber + ".");
-
-    if(_operation == null)
-      return;
-
+    
     if(_secondNumber == null)
       return _SetSecondNumber("0.");
 
@@ -129,6 +126,13 @@ class Calculator{
     }
 
     _firstNumber = expression;
+
+    if(_firstNumber == "69.0")
+      _SetExpression("nice");
+
+    if(_firstNumber == "69.42")
+      _SetExpression("double nice");
+
     _operation = null;
     _secondNumber = null;
   }
@@ -167,9 +171,7 @@ class Calculator{
     return expression.length / 1.8 < 16 ? 16 : expression.length / 1.8;
   }
 
-  void _SetExpression(String expression){
-    this.expression = expression;
-  }
+  void _SetExpression(String expression) => this.expression = expression;
   void _SetFirstNumber(String number) { _firstNumber = number; _update(); }
   void _SetSecondNumber(String number) { _secondNumber = number; _update();}
   void setOperation(CalculatorOperation operation){
