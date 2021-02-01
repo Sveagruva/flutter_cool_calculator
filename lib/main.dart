@@ -67,9 +67,9 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           Expanded(
             child: Row(children: [
-              Expanded(flex: 1, child: TextButton(onPressed: () => setState(() =>_calculator.NumberInput(1)), child: Text("1"))),
-              Expanded(flex: 1, child: TextButton(onPressed: () => setState(() =>_calculator.NumberInput(2)), child: Text("2"))),
-              Expanded(flex: 1, child: TextButton(onPressed: () => setState(() =>_calculator.NumberInput(3)), child: Text("3"))),
+              Expanded(flex: 1, child: TextButton(onPressed: () => setState(() =>_calculator.NumberInput(7)), child: Text("7"))),
+              Expanded(flex: 1, child: TextButton(onPressed: () => setState(() =>_calculator.NumberInput(8)), child: Text("8"))),
+              Expanded(flex: 1, child: TextButton(onPressed: () => setState(() =>_calculator.NumberInput(9)), child: Text("9"))),
               Expanded(flex: 1, child: TextButton(onPressed: () => setState(() =>_calculator.setOperation(CalculatorOperation.miltiply)), child: Text("*")))
             ],
                           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -86,9 +86,9 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           Expanded(
             child: Row(children: [
-              Expanded(flex: 1, child: TextButton(onPressed: () => setState(() =>_calculator.NumberInput(7)), child: Text("7"))),
-              Expanded(flex: 1, child: TextButton(onPressed: () => setState(() =>_calculator.NumberInput(8)), child: Text("8"))),
-              Expanded(flex: 1, child: TextButton(onPressed: () => setState(() =>_calculator.NumberInput(9)), child: Text("9"))),
+              Expanded(flex: 1, child: TextButton(onPressed: () => setState(() =>_calculator.NumberInput(1)), child: Text("1"))),
+              Expanded(flex: 1, child: TextButton(onPressed: () => setState(() =>_calculator.NumberInput(2)), child: Text("2"))),
+              Expanded(flex: 1, child: TextButton(onPressed: () => setState(() =>_calculator.NumberInput(3)), child: Text("3"))),
               Expanded(flex: 1, child: TextButton(onPressed: () => setState(() =>_calculator.setOperation(CalculatorOperation.minus)), child: Text("-")))
             ],              crossAxisAlignment: CrossAxisAlignment.stretch,
               mainAxisSize: MainAxisSize.max,),
